@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap5 随机抽人</title>
+	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://sh.smartedu.cn">微校</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://10.70.17.89">录播</a>
+    </li>
+
+   
+  </ul> 
+	<div class="card">
+    <div class="card-body">
+		<h3>随机抽人</h3>
+		  <div class="alert alert-primary">
+    <strong>提示：</strong> 本人以人头保证公正性
+  </div>
+		<hr>
+		 <div class="card" align="center">
+    <div class="card-body" align="center">
+			 <h1 id="first">第一个人没抽</h1>
+			 <hr>
+			 <h1 id="second">第二个人没抽</h1>
+			 
+			 <hr>
+			  <button type="button" onclick="Function0()" class="btn btn-success">抽第一个人</button> | <button type="button" onclick="Function1()" class="btn btn-info">抽第二个人</button>
+			 <br>
+		
+
+		</div>
+  </div>
+		<hr>
+		<div align="center">
+		<img src="./wojiansini.png" width="170" height="200">
+			<p>抽到了就把作业端上来罢～</p>
+		</div>
+		</div>
+  </div>
+	
+</div>
+<script>
+function Function0(){
+	var x=document.getElementById("first")
+	x.innerHTML=Math.floor((Math.random()*23)+1);
+}
+	function Function1(){
+	var x=document.getElementById("second")
+	x.innerHTML=Math.floor((Math.random()*23)+1);
+}
+</script>
+</body>
+</html>
