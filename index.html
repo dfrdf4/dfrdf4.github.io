@@ -1,68 +1,51 @@
 <!DOCTYPE html>
 <html>
+  
 <head>
-  <title>Bootstrap5 随机抽人</title>
-	
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <title>随机抽人6.0.4 - 请先选择一个选项</title>
+  <link rel="stylesheet" href="https://cdn.w3cbus.com/library/mdui/1.0.2/css/mdui.min.css"/>
 </head>
-<body>
+<body class="mdui-drawer-body-left" style="padding-top: 20px;">
 
-<div class="container mt-3">
-
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">HOME</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="https://sh.smartedu.cn">微校</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="http://10.70.17.89">录播</a>
-    </li>
-
+  <div class="mdui-drawer" id="drawer">
+    <ul class="mdui-list">
+      <li class="mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons">move_to_inbox</i>
+        <div class="mdui-list-item-content"><a herf="pick.html">抽人</a></div>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons">star</i>
+        <div class="mdui-list-item-content"><a herf="https://sh.smartedu.cn">微校</a></div>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons">send</i>
+        <div class="mdui-list-item-content"><a herf="./mx.pdf">默写</a></div>
+      </li>
    
-  </ul> 
-	<div class="card">
-    <div class="card-body">
-		<h3>随机抽人</h3>
-		  <div class="alert alert-primary">
-    <strong>提示：</strong> 本人以人头保证公正性
+    
+      <li class="mdui-subheader">MORE🌟</li>
+      <li class="mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons">email</i>
+        <div class="mdui-list-item-content"><a herf="./About.html">About/Changelog</a></div>
+      </li>
+   
+    </ul>
   </div>
-		<hr>
-		 <div class="card" align="center">
-    <div class="card-body" align="center">
-			 <h1 id="first">第一个人没抽</h1>
-			 <hr>
-			 <h1 id="second">第二个人没抽</h1>
-			 
-			 <hr>
-			  <button type="button" onclick="Function0()" class="btn btn-success">抽第一个人</button> | <button type="button" onclick="Function1()" class="btn btn-info">抽第二个人</button>
-			 <br>
-		
 
-		</div>
+  <div align="center" class="mdui-container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <i class="fa fa-adjust" style="font-size:48px;color:grey"></i>
+   <h2>请先选择一个选项</h2>
   </div>
-		<hr>
-		<div align="center">
-		<img src="./wojiansini.png" width="170" height="200">
-			<p>抽到了就把作业端上来罢～</p>
-		</div>
-		</div>
-  </div>
-	
-</div>
-<script>
-function Function0(){
-	var x=document.getElementById("first")
-	x.innerHTML=Math.floor((Math.random()*23)+1);
-}
-	function Function1(){
-	var x=document.getElementById("second")
-	x.innerHTML=Math.floor((Math.random()*23)+1);
-}
-</script>
+
+  <script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script>
 </body>
 </html>
